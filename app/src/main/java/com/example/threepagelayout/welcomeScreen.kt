@@ -1,20 +1,32 @@
 package com.example.threepagelayout
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+//import androidx.core.view.ViewCompat
+//import androidx.core.view.WindowInsetsCompat
+//import com.example.threepagelayout.databinding.ActivityMainBinding
+import com.example.threepagelayout.databinding.ActivityWelcomeScreenBinding
 
-class welcomeScreen : AppCompatActivity() {
+class WelcomeScreen : AppCompatActivity() {
+    private lateinit var binding: ActivityWelcomeScreenBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_welcome_screen)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        binding = ActivityWelcomeScreenBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.headerDrawerBackBtn.setOnClickListener {
+//            Toast.makeText(this, "Begin button Clicked", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this@WelcomeScreen, MainActivity::class.java))
         }
+
+        binding.signupBtn.setOnClickListener {
+//            Toast.makeText(this, "Begin button Clicked", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this@WelcomeScreen, SignUpPage::class.java))
+        }
+
+
     }
 }

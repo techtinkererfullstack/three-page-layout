@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/background"
             android:textColor="@color/black"
-            android:text="<"
+            android:text="back"
             android:textStyle="bold"
             android:textSize="20.dp"
             android:layout_marginHorizontal="10.dp"
@@ -63,6 +63,7 @@
 
         <LinearLayout
             android:layout_weight="1"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"

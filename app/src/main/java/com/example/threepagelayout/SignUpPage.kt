@@ -2,28 +2,29 @@ package com.example.threepagelayout
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.threepagelayout.databinding.ActivityMainBinding
+import com.example.threepagelayout.databinding.ActivitySignUpPageBinding
 import com.example.threepagelayout.databinding.ActivityWelcomeScreenBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class SignUpPage : AppCompatActivity() {
+    private lateinit var binding: ActivitySignUpPageBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivitySignUpPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.beginBtn.setOnClickListener {
+        binding.headerDrawerBackBtn.setOnClickListener {
 //            Toast.makeText(this, "Begin button Clicked", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this@MainActivity, WelcomeScreen::class.java))
+            startActivity(Intent(this@SignUpPage, WelcomeScreen::class.java))
         }
 
-
+        binding.signupBtnSignupPage.setOnClickListener {
+            startActivity(Intent(this@SignUpPage, TeachersScreen::class.java ))
+        }
 
 
     }

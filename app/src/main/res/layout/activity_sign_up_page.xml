@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpPage">
+
+    <LinearLayout
+        android:id="@+id/header_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="70.dp"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10.dp"
+        >
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/header_drawer_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/background"
+            android:textColor="@color/black"
+            android:text="back"
+            android:textStyle="bold"
+            android:textSize="20.dp"
+            android:layout_marginHorizontal="10.dp"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="25.dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_weight="1"
+            android:id="@+id/profile_image"
+            android:layout_width="60.dp"
+            android:layout_height="60.dp"
+            android:src="@drawable/profile_pic"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="20.dp"
+        android:paddingVertical="10.dp"
+        android:background="@color/background"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENTER YOUR\n INFORMATION"
+            android:textSize="30.sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="15.dp"
+            android:textColor="@color/blue"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20.sp"
+            android:hint="Enter Your Name"
+            android:padding="20.dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20.sp"
+            android:hint="Enter Your Email"
+            android:padding="20.dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20.sp"
+            android:hint="Enter Your Address"
+            android:padding="20.dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20.sp"
+            android:hint="Enter Your Mobile Number"
+            android:padding="20.dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20.sp"
+            android:hint="Enter Your Institute Name"
+            android:padding="20.dp"
+            android:layout_marginBottom="30.dp"
+            />
+
+        <Button
+            android:id="@+id/signup_btn_signupPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:text="Sign up for another exam"
+            android:textStyle="bold"
+            android:textSize="20.dp"
+            android:layout_marginHorizontal="20.dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
