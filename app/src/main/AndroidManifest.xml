@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ThreePageLayout">
         <activity
+            android:name=".TeachersScreen"
+            android:exported="false" />
+        <activity
             android:name=".welcomeScreen"
             android:exported="false" />
         <activity

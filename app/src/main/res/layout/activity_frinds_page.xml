@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".welcomeScreen"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    >
+    <!--drawer-->
+    <LinearLayout
+        android:id="@+id/header_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="70.dp"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10.dp"
+        >
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/header_drawer_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/background"
+            android:textColor="@color/black"
+            android:text="<"
+            android:textStyle="bold"
+            android:textSize="20.dp"
+            android:layout_marginHorizontal="10.dp"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teachers"
+            android:textColor="@color/white"
+            android:textSize="25.dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_weight="1"
+            android:id="@+id/profile_image"
+            android:layout_width="60.dp"
+            android:layout_height="60.dp"
+            android:src="@drawable/profile_pic"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20.dp">
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100.dp"
+                app:cardCornerRadius="20.dp"
+                android:layout_marginBottom="20.dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="20.dp"
+                    >
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image0"
+                    android:layout_width="60.dp"
+                    android:layout_height="60.dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/profile_pic"
+                   />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mr. Han"
+                        android:textStyle="bold"
+                        android:textSize="25.sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        >
+                        <ImageView
+                            android:layout_width="30.dp"
+                            android:padding="5.dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/callicon"
+
+                            />
+                        <ImageView
+                            android:layout_width="45.dp"
+                            android:padding="5.dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/emailicon"/>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100.dp"
+            app:cardCornerRadius="20.dp"
+            android:layout_marginBottom="20.dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="20.dp"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image2"
+                    android:layout_width="60.dp"
+                    android:layout_height="60.dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/profile_pic"
+                    />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mr. Cat"
+                    android:textStyle="bold"
+                    android:textSize="25.sp"
+                    />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="30.dp"
+                        android:padding="5.dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/callicon"
+
+                        />
+                    <ImageView
+                        android:layout_width="45.dp"
+                        android:padding="5.dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/emailicon"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100.dp"
+            app:cardCornerRadius="20.dp"
+            android:layout_marginBottom="20.dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="20.dp"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image3"
+                    android:layout_width="60.dp"
+                    android:layout_height="60.dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/profile_pic"
+                    />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mr. Mackens"
+                    android:textStyle="bold"
+                    android:textSize="25.sp"
+                    />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="30.dp"
+                        android:padding="5.dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/callicon"
+
+                        />
+                    <ImageView
+                        android:layout_width="45.dp"
+                        android:padding="5.dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/emailicon"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100.dp"
+            app:cardCornerRadius="20.dp"
+            android:layout_marginBottom="20.dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="20.dp"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image4"
+                    android:layout_width="60.dp"
+                    android:layout_height="60.dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/profile_pic"
+                    />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mrs. Petty"
+                    android:textStyle="bold"
+                    android:textSize="25.sp"
+                    />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="30.dp"
+                        android:padding="5.dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/callicon"
+
+                        />
+                    <ImageView
+                        android:layout_width="45.dp"
+                        android:padding="5.dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/emailicon"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100.dp"
+            app:cardCornerRadius="20.dp"
+            android:layout_marginBottom="20.dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="20.dp"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image1"
+                    android:layout_width="60.dp"
+                    android:layout_height="60.dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/profile_pic"
+                    />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mr. Han"
+                    android:textSize="25.sp"
+                    />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="30.dp"
+                        android:padding="5.dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/callicon"
+
+                        />
+                    <ImageView
+                        android:layout_width="45.dp"
+                        android:padding="5.dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/emailicon"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
