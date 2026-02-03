@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="6">
+    <!--drawer-->
+    <LinearLayout
+        android:id="@+id/header_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="70.dp"
+        android:layout_weight="1"
+        android:background="@color/blue"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10.dp">
+
+        <Button
+            android:id="@+id/header_drawer_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10.dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/background"
+            android:text="back"
+            android:textColor="@color/black"
+            android:textSize="20.dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Exams"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25.dp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="60.dp"
+            android:layout_height="60.dp"
+            android:layout_weight="1"
+            android:src="@drawable/profile_pic" />
+    </LinearLayout>
+
+    <!--    main page-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:backgroundTint="@color/black"
+        android:orientation="vertical"
+        android:padding="20.dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTop"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardBackgroundColor="@color/blue"
+            app:cardCornerRadius="28dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="30.dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.sp"
+                    android:text="Basic Algebra"
+                    android:textSize="18.sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18.sp"
+                    android:text="Maths 101"
+                    android:textSize="16.sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.sp"
+                    android:text="January 10, 2022"
+                    android:textSize="16.sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20.sp"
+                    android:text="Class 3B"
+                    android:textSize="16.sp" />
+
+                <Button
+                    android:id="@+id/signup_btn_card1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="Sigh up"
+                    android:textColor="@color/white"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250.dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_weight="1"
+                    android:padding="40.dp"
+                    android:src="@drawable/education"
+
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:backgroundTint="@color/black"
+        android:orientation="vertical"
+        android:padding="20.dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBottom"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardBackgroundColor="@color/orange"
+            app:cardCornerRadius="28dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="30.dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.sp"
+                    android:text="Basic Algebra"
+                    android:textSize="18.sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18.sp"
+                    android:text="Maths 101"
+                    android:textSize="16.sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.sp"
+                    android:text="January 10, 2022"
+                    android:textSize="16.sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20.sp"
+                    android:text="Class 3B"
+                    android:textSize="16.sp" />
+
+                <Button
+                    android:id="@+id/signup_btn_card2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:text="Sigh up"
+                    android:textColor="@color/white"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250.dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_weight="1"
+                    android:padding="40dp"
+                    android:src="@drawable/education" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20.dp"
+            android:backgroundTint="@color/blue"
+            android:text="Sign up for another exam"
+            android:textColor="@color/white"
+            android:textSize="20.dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

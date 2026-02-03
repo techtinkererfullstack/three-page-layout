@@ -4,10 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.threepagelayout.databinding.ActivitySignUpPageBinding
-import com.example.threepagelayout.databinding.ActivityWelcomeScreenBinding
 
 class SignUpPage : AppCompatActivity() {
     private lateinit var binding: ActivitySignUpPageBinding
@@ -19,13 +16,12 @@ class SignUpPage : AppCompatActivity() {
 
         binding.headerDrawerBackBtn.setOnClickListener {
 //            Toast.makeText(this, "Begin button Clicked", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this@SignUpPage, WelcomeScreen::class.java))
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            startActivity(Intent(this@SignUpPage, WelcomeScreenn::class.java))
         }
 
         binding.signupBtnSignupPage.setOnClickListener {
-            startActivity(Intent(this@SignUpPage, TeachersScreen::class.java ))
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            startActivity(Intent(this@SignUpPage, TeachersScreen::class.java))
+
         }
 
 

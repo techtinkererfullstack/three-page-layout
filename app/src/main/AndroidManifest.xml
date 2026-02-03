@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ThreePageLayout">
         <activity
+            android:name=".WelcomeScreenn"
+            android:exported="false" />
+        <activity
             android:name=".SignUpPage"
             android:exported="false" />
         <activity

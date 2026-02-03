@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".welcomeScreen"
+    tools:context=".TeachersScreen"
     android:background="@color/background"
     android:gravity="center_horizontal"
     >
