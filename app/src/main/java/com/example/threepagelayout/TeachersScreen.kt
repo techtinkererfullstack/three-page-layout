@@ -19,6 +19,7 @@ class TeachersScreen : AppCompatActivity() {
         binding.headerDrawerBackBtn.setOnClickListener {
 //            Toast.makeText(this, "Begin button Clicked", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this@TeachersScreen, SignUpPage::class.java))
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
 
     }

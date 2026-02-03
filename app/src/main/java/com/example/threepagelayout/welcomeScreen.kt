@@ -20,11 +20,13 @@ class WelcomeScreen : AppCompatActivity() {
         binding.headerDrawerBackBtn.setOnClickListener {
 //            Toast.makeText(this, "Begin button Clicked", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this@WelcomeScreen, MainActivity::class.java))
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
 
         binding.signupBtn.setOnClickListener {
 //            Toast.makeText(this, "Begin button Clicked", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this@WelcomeScreen, SignUpPage::class.java))
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
 
 

@@ -18,9 +18,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         binding.beginBtn.setOnClickListener {
 //            Toast.makeText(this, "Begin button Clicked", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this@MainActivity, WelcomeScreen::class.java))
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
 
 

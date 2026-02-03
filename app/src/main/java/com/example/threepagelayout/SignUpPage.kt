@@ -20,10 +20,12 @@ class SignUpPage : AppCompatActivity() {
         binding.headerDrawerBackBtn.setOnClickListener {
 //            Toast.makeText(this, "Begin button Clicked", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this@SignUpPage, WelcomeScreen::class.java))
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
 
         binding.signupBtnSignupPage.setOnClickListener {
             startActivity(Intent(this@SignUpPage, TeachersScreen::class.java ))
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
 
 
